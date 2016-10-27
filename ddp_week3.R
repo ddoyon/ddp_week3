@@ -109,7 +109,7 @@ plot_projections <- function(week, pos, num = 30) {
     
     g <- ggplot(proj, aes(points, player)) + geom_point()
     g <- g + geom_errorbarh(aes(xmin = lower, xmax = upper))
-    g <- g + ggtitle(paste("Fantasy Football", pos, "Scoring Projections for Week", week, "of 2016"))
+    g <- g + ggtitle(paste("Fantasy Football", pos, "Scoring Projections for Week", week, "(October 27, 2016)"))
     g <- g + xlab("Average of projected points from Fantasy Football Analytics")
     g <- g + ylab(NULL)
     
